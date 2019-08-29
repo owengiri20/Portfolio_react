@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import "smooth-scroll"
+
 
 class Navbar extends Component {
   constructor(props) {
@@ -38,16 +40,16 @@ class Navbar extends Component {
         </div>
         <ul className={`nav-links ${this.state.navActive && "nav-active"}`}>
           <li>
-            <a href="">HOME</a>
+            <a href="#">HOME</a>
           </li>
           <li>
-            <a href="">ABOUT</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li>
-            <a href="">PROJECTS</a>
+            <a href="#projects" >PROJECTS</a>
           </li>
           <li>
-            <a href="">CONTACT</a>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
         <div

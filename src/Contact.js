@@ -2,7 +2,7 @@ import React, { Component } from "react";
 class Contact extends Component {
   render() {
     return (
-      <div className="Contact">
+      <div className="Contact" id="contact">
         <h1>Contact Me</h1>
         <p>I reply super quick!</p>
         <a href="mailto:owengiri20@gmial.com" className="email-btn">

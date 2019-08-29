@@ -9,19 +9,15 @@ class Project extends Component {
         </div>
 
         <div class="proj__col2">
-          <h1 class="proj__title">Project Title</h1>
+          <h1 class="proj__title">{this.props.title}</h1>
           <p class="proj__des">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
-            sapiente doloribus omnis voluptates sit quod nihil ipsa cupiditate
-            non odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Saepe quos, repellendus soluta odio sit optio, quibusdam magnam
-            facere accusantium, ab suscipit?
+            {this.props.description}
           </p>
           <div class="proj__bts">
-            <a href="" class="view__proj">
+            <a href={this.props.link} class="view__proj" target="_blank" >
               View project
             </a>
-            <a href="" class="view__proj">
+            <a href={this.props.ghLink} target="_blank" class="view__proj">
               View code
             </a>
           </div>

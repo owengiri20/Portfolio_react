@@ -1,6 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 
+import "smooth-scroll"
+
 import Navbar from "./Navbar";
 import Landing from "./Landing";
 import Porjects from "./Projects";
