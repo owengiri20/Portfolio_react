@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import "./SwitchMode.css"
 import "smooth-scroll"
+
 
 
 class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navActive: false
+      navActive: false,
+      isLight: false
     };
 
     this.burgerClick = this.burgerClick.bind(this);
@@ -18,6 +21,19 @@ class Navbar extends Component {
     console.log(this.state);
     this.navLinksAnimate();
   }
+
+  changeTheme() {
+    let root = document.documentElement;
+    this.setState(st => ({ isLight: !st.isLight }), () => {
+      root.style.setProperty("--main--dark", this.state.isLight ? "#f4f4f4" : "#191919")
+      root.style.setProperty("--main--light", this.state.isLight ? "#191919" : "#f4f4f4")
+
+
+    }
+    );
+
+  }
+
   navLinksAnimate() {
     const navLinks = document.querySelectorAll(".nav-links li");
 
@@ -34,7 +50,9 @@ class Navbar extends Component {
   }
   render() {
     return (
+
       <nav className="Navbar">
+
         <div className="Logo">
           <h4 className="logo">OWEN GIRI</h4>
         </div>
@@ -50,6 +68,13 @@ class Navbar extends Component {
           </li>
           <li>
             <a href="#contact">CONTACT</a>
+          </li>
+          <li>
+            <label class="switch" >
+              <input onClick={() => this.changeTheme()} type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <span className="enable-text"><em>enable {this.state.isLight ? "DARK" : "LIGHT"} mode!</em></span>
           </li>
         </ul>
         <div

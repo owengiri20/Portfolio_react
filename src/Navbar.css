@@ -1,5 +1,7 @@
 :root {
   --main--dark: #191919;
+  --main--light: #f4f4f4;
+  
   --sec--heading--size: 2.5rem;
   --p--size: 1.5rem;
 }
@@ -16,12 +18,16 @@ nav {
   font-family: "Livvic", sans-serif;
 }
 
+span.enable-text{
+  margin-left: 1rem;
+}
+
 html {
   font-size: 62.5%;
 }
 
 .logo {
-  color: #fff;
+  color: var(--main--light);
   font-size: 2.6rem;
 }
 
@@ -38,7 +44,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--main--light);
 }
 
 .burger-menu {
@@ -48,7 +54,7 @@ a {
 .burger-menu div {
   width: 2.5rem;
   height: 0.3rem;
-  background: #fff;
+  background: var(--main--light);
   margin: 4px;
   transition: ease-out 0.3s;
 }
@@ -62,7 +68,7 @@ a {
     right: 0;
     height: 91vh;
     top: 9vh;
-    background: #333;
+    background: var(--main--dark);
     display: flex;
     flex-direction: column;
     align-items: center;
