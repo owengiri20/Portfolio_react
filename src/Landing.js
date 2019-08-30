@@ -32,7 +32,7 @@ class Landing extends Component {
                   </p>
                 </div>
                 <div class="view-btns">
-                  <button><a href={Pdf} target="_blank">View Resume</a> </button>
+                  {/* <button><a href={Pdf} target="_blank">View Resume</a> </button> */}
                   <button><a href="#projects">View Projects</a></button>
                 </div>
               </div>

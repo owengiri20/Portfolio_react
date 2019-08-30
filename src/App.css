@@ -353,7 +353,7 @@ section.projects {
   color: #f4f4f4
 }
 
-@media (max-width: 778px) {
+@media (max-width: 800px) {
   html {
     font-size: 50.5%;
     overflow-x: hidden;

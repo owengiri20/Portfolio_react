@@ -59,7 +59,7 @@ a {
   transition: ease-out 0.3s;
 }
 
-@media screen and (max-width: 755px) {
+@media screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
