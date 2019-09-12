@@ -49,6 +49,7 @@ class Navbar extends Component {
     });
   }
   render() {
+    const { navActive, isLight } = this.state;
     return (
 
       <nav className="Navbar">
@@ -56,7 +57,7 @@ class Navbar extends Component {
         <div className="Logo">
           <h4 className="logo">OWEN GIRI</h4>
         </div>
-        <ul className={`nav-links ${this.state.navActive && "nav-active"}`}>
+        <ul className={`nav-links ${navActive && "nav-active"}`}>
           <li>
             <a href="#">HOME</a>
           </li>
@@ -74,11 +75,11 @@ class Navbar extends Component {
               <input onClick={() => this.changeTheme()} type="checkbox" />
               <span class="slider round"></span>
             </label>
-            <span className="enable-text"><em>enable {this.state.isLight ? "DARK" : "LIGHT"} mode!</em></span>
+            <span className="enable-text"><em>switch to {isLight ? "DARK" : "LIGHT"} mode!</em></span>
           </li>
         </ul>
         <div
-          className={`burger-menu ${this.state.navActive ? "toggle" : ""}`}
+          className={`burger-menu ${navActive ? "toggle" : ""}`}
           onClick={this.burgerClick}
         >
           <div className="line1" />

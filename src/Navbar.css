@@ -8,7 +8,6 @@
 nav {
   display: flex;
   justify-content: space-around;
-  /* max-width: 1400px; */
   min-height: 9vh;
   align-items: center;
   background: var(--main--dark);
@@ -87,6 +86,10 @@ a {
   .burger-menu {
     display: block;
     cursor: pointer;
+  }
+  .enable-text{
+    /* color: red; */
+    display: block;
   }
 }
 

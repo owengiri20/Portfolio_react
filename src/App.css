@@ -47,6 +47,7 @@ html {
   top: 11vh;
   /* z-index: -1; */
   justify-content: center;
+  /* width: 90%; */
 }
 
 .landing__content-col1 {
@@ -97,8 +98,6 @@ html {
   display: block;
 }
 
-
-
 .about-me h1 {
   font-size: var(--sec--heading--size);
   font-family: var(--heading--font);
@@ -109,10 +108,7 @@ html {
   font-size: var(--p--size);
   margin-bottom: 4rem;
 }
-/* 
-#about{
-  visibility: hidden;
-} */
+
 #about{
   display: block;
   position: relative;
@@ -124,12 +120,9 @@ html {
   display: block;
   position: relative;
   visibility: hidden;
-  
-  /* visibility: hidden;  */
   top: -10rem;
   z-index: -1;
 }
-
 
 .view-btns {
   display: flex;
@@ -145,9 +138,9 @@ html {
   font-size: var(--p--size);
 }
 
-  .view-btns a{
-    color: var(--main--light)
-  }
+.view-btns a{
+  color: var(--main--light)
+}
 
 .view-btns button:hover, .view-btns a:hover {
   background: var(--main--light);
@@ -365,7 +358,6 @@ section.projects {
   width: 90%;
   
 }
-
   .landing__content {
     display: grid;
     grid-template-columns: 1fr;
@@ -422,3 +414,42 @@ section.projects {
   }
 }
 
+
+@media(max-height: 660px){
+  *{
+    /* color: red; */
+  }
+  section.projects {
+    padding-top: 47vh;
+    margin: auto;
+    
+  }
+
+  .about-me {
+    margin-top: 14vh;
+    max-width: 300px !important;
+    margin: auto;
+    
+  }
+  
+  .container {
+    margin: auto;
+    
+  }
+
+  .landing__content {
+    width: 70%;
+    color:red  !important;
+  }
+  .landing__content-col1{
+    width: 70%;
+    /* color:red  !important; */
+    
+  }
+
+  .landing__content-col1 .name-letters {
+    font-size: 24rem;
+    grid-gap: 1rem;
+  }
+
+}

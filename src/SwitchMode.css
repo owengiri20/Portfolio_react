@@ -60,3 +60,14 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  @media screen and (max-width: 800px) {
+    /* The switch - the box around the slider */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 2rem;
+      transform: translateX(70%);
+      margin-bottom: 1rem;
+    }
+  }
