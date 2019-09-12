@@ -13,6 +13,29 @@
   box-sizing: 0;
   box-sizing: border-box;
 }
+
+.btn{
+  padding: 1rem;
+  background: transparent;
+  color: var(--main--light);
+  border: 0.2rem solid var(--main--light);
+  margin-right: 1rem;
+  font-size: var(--p--size);
+}
+
+.btn:hover{
+  background: var(--main--light);
+  color: var(--main--dark);
+  border: 0.2rem solid var(--main--light);
+  cursor: pointer;
+}
+
+.view-all-projs-btn{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
 body {
   margin: 0px;
   background: var(--main--dark);
@@ -115,6 +138,7 @@ html {
   top: -10rem;
   visibility: hidden;
 }
+
 
 #projects{
   display: block;
@@ -299,6 +323,7 @@ section.projects {
   background-position: 10px -780px;
   background: url("https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat;
   background-size: cover; /* Resize the background image to cover the entire container */
+  margin-top: 7rem;
 }
 
 .Contact h1 {
@@ -429,12 +454,10 @@ section.projects {
     margin-top: 14vh;
     max-width: 300px !important;
     margin: auto;
-    
   }
   
   .container {
     margin: auto;
-    
   }
 
   .landing__content {
@@ -443,8 +466,6 @@ section.projects {
   }
   .landing__content-col1{
     width: 70%;
-    /* color:red  !important; */
-    
   }
 
   .landing__content-col1 .name-letters {

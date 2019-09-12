@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
+import { Link, Switch, Route } from "react-router-dom"
 
 import "smooth-scroll"
 
@@ -14,8 +15,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Landing />
-      <Porjects />
+      <Switch>
+        <Route exact path="/" render={() => <div><Landing /><Porjects /></div>} />
+        <Route exact path="/allProjects" render={() => <div>Projectss</div>} />
+      </Switch>
+
       <Contact />
       <Footer />
     </div>
