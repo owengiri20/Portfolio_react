@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 class Project extends Component {
   render() {
+    console.log(this.props);
+
     return (
       <div class="project__box" data-aos="fade-left">
         <div class="proj__col1">

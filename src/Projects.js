@@ -22,7 +22,7 @@ class Projects extends Component {
           </div>
         </section>
         <div className="view-all-projs-btn">
-          <Link to="/" className="btn">all projs</Link>
+          <Link to="/allProjects" className="btn">all projs</Link>
         </div>
       </div>
     );

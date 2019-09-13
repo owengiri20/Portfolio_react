@@ -1,9 +1,14 @@
+.AllProjectsPage-content{
+    margin-top: 12vh;
+    text-align: center
+    
+}
 .AllProjectsPage-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
     margin: auto;
-    margin-top: 12vh;
+    margin-top: 7vh;
     grid-row-gap: 5rem;
 }
 
