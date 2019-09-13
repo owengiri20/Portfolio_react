@@ -6,6 +6,7 @@ import "smooth-scroll"
 
 import Navbar from "./Navbar";
 import Landing from "./Landing";
+import AllProjectsPage from "./AllProjectsPage"
 import Porjects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -17,8 +18,9 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" render={() => <div><Landing /><Porjects /></div>} />
-        <Route exact path="/allProjects" render={() => <div>Projectss</div>} />
+        <Route exact path="/allProjects" render={() => <AllProjectsPage />} />
       </Switch>
+
 
       <Contact />
       <Footer />

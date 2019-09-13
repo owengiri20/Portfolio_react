@@ -1,0 +1,42 @@
+.AllProjectsPage-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 12vh;
+    grid-row-gap: 5rem;
+}
+
+/* SMALL PROJECT */
+.SmallProject{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.SmallProject img {
+    width: 25rem;
+    border: 1px #dfdfdfc2 solid;
+    margin: 1rem 0;
+}
+
+@media (max-width: 800px){
+    .AllProjectsPage-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 7rem;
+    }
+}
+
+@media (max-width: 400px){
+    .AllProjectsPage-wrapper{
+        /* grid-template-columns: 1fr; */
+        grid-row-gap: 7rem;
+    }
+
+    .SmallProject img {
+        width: 17rem;
+        border: 1px #dfdfdfc2 solid;
+        margin: 1rem 0;
+    }
+}

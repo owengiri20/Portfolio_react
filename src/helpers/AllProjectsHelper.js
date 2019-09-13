@@ -12,7 +12,6 @@ export default function AllProjects() {
             codeUrl: "https://github.com/owengiri20/Portfolio_react",
             img: portfolioImg,
             description: "This very website your looking at! after about a couple months of learning React I decided to rebuild my old portfolio site (it was pure HTML/CSS) in React. I found that this was a great way of reinforcing my learning of React fundimentals. "
-
         },
         {
             id: 1,
@@ -25,6 +24,24 @@ export default function AllProjects() {
         },
         {
             id: 2,
+            name: "Mood For Food",
+            projUrl: "https://moodforfood.netlify.com/",
+            codeUrl: "https://github.com/owengiri20/Mood_for_Food/tree/master/code",
+            img: m4fImg,
+            description: "A Food browsing app, that lets you browse thousands of recipes. this project was built right after i completed a Udemy course focused of vinnila JS. 'Mood For Food' is powered by the Food2Fork API and built with pure HTML, CSS, Javascript."
+
+        },
+        {
+            id: 3,
+            name: "Mood For Food",
+            projUrl: "https://moodforfood.netlify.com/",
+            codeUrl: "https://github.com/owengiri20/Mood_for_Food/tree/master/code",
+            img: m4fImg,
+            description: "A Food browsing app, that lets you browse thousands of recipes. this project was built right after i completed a Udemy course focused of vinnila JS. 'Mood For Food' is powered by the Food2Fork API and built with pure HTML, CSS, Javascript."
+
+        },
+        {
+            id: 4,
             name: "Mood For Food",
             projUrl: "https://moodforfood.netlify.com/",
             codeUrl: "https://github.com/owengiri20/Mood_for_Food/tree/master/code",
