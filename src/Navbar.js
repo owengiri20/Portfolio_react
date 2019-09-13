@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom"
 import "./Navbar.css";
 import "./SwitchMode.css"
 import "smooth-scroll"
@@ -59,16 +60,16 @@ class Navbar extends Component {
         </div>
         <ul className={`nav-links ${navActive && "nav-active"}`}>
           <li>
-            <a href="#">HOME</a>
+            <Link to="/#">HOME</Link>
           </li>
           <li>
-            <a href="#about">ABOUT</a>
+            <Link to="/#about">ABOUT</Link>
           </li>
           <li>
-            <a href="#projects" >PROJECTS</a>
+            <Link to="/#projects" >PROJECTS</Link>
           </li>
           <li>
-            <a href="#contact">CONTACT</a>
+            <Link to="/#contact">CONTACT</Link>
           </li>
           <li>
             <label class="switch" >
