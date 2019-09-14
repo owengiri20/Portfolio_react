@@ -15,6 +15,7 @@ nav {
   width: 100vw;
   font-family: "Livvic", sans-serif;
   top: 0;
+  border-bottom: #76767639 solid 1px;
 }
 
 span.enable-text{

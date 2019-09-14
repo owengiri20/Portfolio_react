@@ -31,24 +31,6 @@ export default function AllProjects() {
             description: "A Food browsing app, that lets you browse thousands of recipes. this project was built right after i completed a Udemy course focused of vinnila JS. 'Mood For Food' is powered by the Food2Fork API and built with pure HTML, CSS, Javascript."
 
         },
-        {
-            id: 3,
-            name: "Mood For Food",
-            projUrl: "https://moodforfood.netlify.com/",
-            codeUrl: "https://github.com/owengiri20/Mood_for_Food/tree/master/code",
-            img: m4fImg,
-            description: "A Food browsing app, that lets you browse thousands of recipes. this project was built right after i completed a Udemy course focused of vinnila JS. 'Mood For Food' is powered by the Food2Fork API and built with pure HTML, CSS, Javascript."
-
-        },
-        {
-            id: 4,
-            name: "Mood For Food",
-            projUrl: "https://moodforfood.netlify.com/",
-            codeUrl: "https://github.com/owengiri20/Mood_for_Food/tree/master/code",
-            img: m4fImg,
-            description: "A Food browsing app, that lets you browse thousands of recipes. this project was built right after i completed a Udemy course focused of vinnila JS. 'Mood For Food' is powered by the Food2Fork API and built with pure HTML, CSS, Javascript."
-
-        }
 
     ]
 
