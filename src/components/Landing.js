@@ -3,7 +3,12 @@ import "smooth-scroll"
 import Pdf from "./textFiles/resume_owen_.pdf"
 
 class Landing extends Component {
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
+
     return (
       <div>
         {/* <!-- LANDING --> */}

@@ -5,13 +5,13 @@ import { Link, Switch, Route } from "react-router-dom"
 import "smooth-scroll"
 
 import AllProjects from "./helpers/AllProjectsHelper"
-import Navbar from "./Navbar";
-import Landing from "./Landing";
-import AllProjectsPage from "./AllProjectsPage"
-import Project from "./Project"
-import Porjects from "./Projects";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+import AllProjectsPage from "./components/AllProjectsPage"
+import Project from "./components/Project"
+import Porjects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./App.css";
 
 class App extends Component {
@@ -31,12 +31,14 @@ class App extends Component {
             render={(routeProps) => {
               const { id } = routeProps.match.params;
               const proj = this.getProject(id)
-              return <Project title={proj.name}
-                img={proj.img}
-                description={proj.description}
-                link={proj.projUrl}
-                ghLink={proj.codeUrl}
-                rp={routeProps} />
+              return <div className="Project__display" >
+                <Project title={proj.name}
+                  img={proj.img}
+                  description={proj.description}
+                  link={proj.projUrl}
+                  ghLink={proj.codeUrl}
+                  rp={routeProps} />
+              </div>
             }
             } />
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Project from "./Project";
 import { Link, Switch } from "react-router-dom"
-import AllProjects from "./helpers/AllProjectsHelper"
+import AllProjects from "../helpers/AllProjectsHelper"
 
 
 class Projects extends Component {
@@ -22,7 +22,7 @@ class Projects extends Component {
           </div>
         </section>
         <div className="view-all-projs-btn">
-          <Link to="/allProjects" className="btn">all projs</Link>
+          <Link to="/allProjects" className="btn">View All Projects</Link>
         </div>
       </div>
     );

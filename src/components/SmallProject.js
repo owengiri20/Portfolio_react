@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"
 
 class SmallProject extends Component {
     render() {
@@ -6,7 +7,7 @@ class SmallProject extends Component {
             <div className="SmallProject">
                 <h1 className="proj__title--sm">MoodForFood</h1>
                 <img src={this.props.img} alt="" className="proj__img--sm" />
-                <button className="btn">View</button>
+                <Link to={`/viewProject/${this.props.id}`} className="btn">View</Link>
             </div>
         );
     }

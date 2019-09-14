@@ -248,6 +248,12 @@ section.projects {
   background: var(--main--light);
 }
 
+.Project__display{
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 20vh;
+}
+
 
 /* ANIMATIONS */
 @keyframes moveInFromLeft {

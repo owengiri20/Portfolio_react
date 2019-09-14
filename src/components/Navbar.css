@@ -1,7 +1,6 @@
 :root {
   --main--dark: #191919;
   --main--light: #f4f4f4;
-  
   --sec--heading--size: 2.5rem;
   --p--size: 1.5rem;
 }
@@ -80,8 +79,6 @@ a {
   .nav-links li {
     opacity: 0;
     font-size: 1.7rem;
-    
-
   }
 
   .burger-menu {
@@ -89,7 +86,6 @@ a {
     cursor: pointer;
   }
   .enable-text{
-    /* color: red; */
     display: block;
   }
 }

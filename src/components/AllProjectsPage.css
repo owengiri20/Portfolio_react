@@ -1,6 +1,7 @@
 .AllProjectsPage-content{
     margin-top: 12vh;
-    text-align: center
+    text-align: center;
+    min-height: 100vh;
     
 }
 .AllProjectsPage-wrapper{

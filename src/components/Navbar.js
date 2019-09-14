@@ -4,8 +4,6 @@ import "./Navbar.css";
 import "./SwitchMode.css"
 import "smooth-scroll"
 
-
-
 class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -15,6 +13,10 @@ class Navbar extends Component {
     };
 
     this.burgerClick = this.burgerClick.bind(this);
+  }
+
+  goToSection(id) {
+    document.querySelector(id).scrollIntoView();
   }
 
   async burgerClick() {
@@ -28,8 +30,6 @@ class Navbar extends Component {
     this.setState(st => ({ isLight: !st.isLight }), () => {
       root.style.setProperty("--main--dark", this.state.isLight ? "#f4f4f4" : "#191919")
       root.style.setProperty("--main--light", this.state.isLight ? "#191919" : "#f4f4f4")
-
-
     }
     );
 
@@ -60,7 +60,7 @@ class Navbar extends Component {
         </div>
         <ul className={`nav-links ${navActive && "nav-active"}`}>
           <li>
-            <Link to="/#">HOME</Link>
+            <Link to="/#" >HOME</Link>
           </li>
           <li>
             <Link to="/#about">ABOUT</Link>
@@ -69,7 +69,7 @@ class Navbar extends Component {
             <Link to="/#projects" >PROJECTS</Link>
           </li>
           <li>
-            <Link to="/#contact">CONTACT</Link>
+            <Link to="#contact">CONTACT</Link>
           </li>
           <li>
             <label class="switch" >
