@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import { Link, Switch, Route } from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 
 import "smooth-scroll"
 
@@ -16,11 +15,13 @@ import "./App.css";
 
 class App extends Component {
   getProject(id) {
-    const proj = AllProjects().find(p => p.id == id)
+    const proj = AllProjects().find(p => String(p.id) === String(id))
     return proj
   }
 
   render() {
+    console.log("If you see this you're awesome!⭐");
+
     return (
       <div className="App">
         <Navbar />

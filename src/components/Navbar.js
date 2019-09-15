@@ -72,9 +72,9 @@ class Navbar extends Component {
             <Link to="#contact">CONTACT</Link>
           </li>
           <li>
-            <label class="switch" >
+            <label className="switch" >
               <input onClick={() => this.changeTheme()} type="checkbox" />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </label>
             <span className="enable-text"><em>switch to {isLight ? "DARK" : "LIGHT"} mode!</em></span>
           </li>

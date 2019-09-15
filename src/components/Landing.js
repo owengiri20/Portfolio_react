@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "smooth-scroll"
-import Pdf from "./textFiles/resume_owen_.pdf"
+// import Pdf from "./textFiles/resume_owen_.pdf"
 
 class Landing extends Component {
 
@@ -12,21 +12,21 @@ class Landing extends Component {
     return (
       <div>
         {/* <!-- LANDING --> */}
-        <section class="landing container">
-          <div class="landing__content">
-            <div class="landing__content-col1">
-              <div class="name-letters">
-                <div class="o-letter">o</div>
-                <div class="w-letter">w</div>
-                <div class="e-letter">e</div>
-                <div class="n-letter">n</div>
+        <section className="landing container">
+          <div className="landing__content">
+            <div className="landing__content-col1">
+              <div className="name-letters">
+                <div className="o-letter">o</div>
+                <div className="w-letter">w</div>
+                <div className="e-letter">e</div>
+                <div className="n-letter">n</div>
               </div>
             </div>
-            <div class="landing__content-col2">
-              <div class="landing__col2--row2">
+            <div className="landing__content-col2">
+              <div className="landing__col2--row2">
                 <hr id="about" />
 
-                <div class="about-me" >
+                <div className="about-me" >
                   <h1>About Me</h1>
                   <p>
                     I love to code!
@@ -36,15 +36,15 @@ class Landing extends Component {
                     As of now I'm finishing my last semester with North Metro TAFE to attain my Diploma in software development, teaching myself web development at home. And actively Looking for work as a front-end Web Developer.
                   </p>
                 </div>
-                <div class="view-btns">
+                <div className="view-btns">
                   {/* <button><a href={Pdf} target="_blank">View Resume</a> </button> */}
                   <button><a href="#projects">View Projects</a></button>
                 </div>
               </div>
-              <div class="landing__col2--row3">
-                <div class="social-links">
-                  <a href="https://www.linkedin.com/in/owen-giri-0635b3178/" target="_blank"><i class="fab fa-linkedin" /></a>
-                  <a href="https://github.com/owengiri20" target="_blank"><i class="fab fa-github" /></a>
+              <div className="landing__col2--row3">
+                <div className="social-links">
+                  <a href="https://www.linkedin.com/in/owen-giri-0635b3178/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" /></a>
+                  <a href="https://github.com/owengiri20" target="_blank" rel="noopener noreferrer"><i className="fab fa-github" /></a>
                   {/* <a href="https://github.com/owengiri20" target="_blank"><i class="fab fa-instagram" /></a>
                   <a href="https://github.com/owengiri20" target="_blank"><i class="fab fa-youtube" /></a> */}
                 </div>

@@ -390,6 +390,10 @@ section.projects {
     margin-top: 5vh
     
   }
+  .landing__content-col1 .name-letters {
+    font-size: 23rem;
+    grid-gap: 1rem;
+  }
   .landing__content-col2 {
     margin-top: -25vh;
     animation: moveInFromRight 1.3s ease-out;
@@ -462,7 +466,7 @@ section.projects {
   }
 
   .landing__content-col1 .name-letters {
-    font-size: 24rem;
+    font-size: 22rem;
     grid-gap: 1rem;
   }
 

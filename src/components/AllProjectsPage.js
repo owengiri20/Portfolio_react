@@ -16,7 +16,7 @@ class AllProjectsPage extends Component {
                     <div className="AllProjectsPage-wrapper">
 
                         {AllProjects().map(proj => (
-                            <SmallProject title={proj.name} id={proj.id} img={proj.img} description={""} link={proj.projUrl} ghLink={proj.codeUrl} />
+                            <SmallProject title={proj.name} id={proj.id} img={proj.img} description={""} link={proj.projUrl} ghLink={proj.codeUrl} key={proj.id} />
                         ))}
                     </div>
                 </div>
