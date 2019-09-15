@@ -15,7 +15,7 @@ export default function AllProjects() {
         {
             id: 1,
             name: "DAD JOKES",
-            projUrl: "https://dadjokes-webapp.netlify.com",
+            projUrl: "https://dadjokes-owen.netlify.com",
             codeUrl: "https://github.com/owengiri20/Dad_jokes/tree/master/src",
             img: dadJokesImg,
             description: "A fun little DAD jokes generator, built with React. At the time of making this project I was following a React course on Udemy and this was one of the demo projects, It was also a few days before fathers day. I tweaked the styling and added a save functionality to it. "
