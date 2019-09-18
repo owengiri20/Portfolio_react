@@ -1,6 +1,8 @@
 import m4fImg from "./imgs/moodforfood.PNG"
 import dadJokesImg from "./imgs/dadJokes.PNG"
 import portfolioImg from "./imgs/portfolio.PNG"
+import colourPickerImg from "./imgs/colourPickerImg.PNG"
+
 
 export default function AllProjects() {
     let allProjects = [
@@ -28,6 +30,15 @@ export default function AllProjects() {
             codeUrl: "https://github.com/owengiri20/Mood_for_Food/tree/master/code",
             img: m4fImg,
             description: "A Food browsing app, that lets you browse thousands of recipes. this project was built right after i completed a Udemy course focused of vinnila JS. 'Mood For Food' is powered by the Food2Fork API and built with pure HTML, CSS, Javascript."
+
+        },
+        {
+            id: 3,
+            name: "Colour Picker App (in progress)",
+            projUrl: "https://colour-picker-inprogress.netlify.com/",
+            codeUrl: "https://github.com/owengiri20/React_colour_app/tree/master/src",
+            img: colourPickerImg,
+            description: "~In progress~."
 
         },
 
