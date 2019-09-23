@@ -5,7 +5,7 @@ import AllProjects from "../helpers/AllProjectsHelper"
 
 class Projects extends Component {
   getFeaturedProjects() {
-    const featuredProjects = AllProjects().filter(p => p.id <= 2).map(proj => (
+    const featuredProjects = AllProjects().filter(p => p.featured == true).map(proj => (
       <Project title={proj.name} img={proj.img} description={proj.description} link={proj.projUrl} ghLink={proj.codeUrl} key={proj.id} />
     ))
     return featuredProjects;
