@@ -33,7 +33,7 @@ class Landing extends Component {
 
                     I've been coding/programming for a couple of years now, in that time I've learnt so many different, skills ranging from front-end web development with HTML, CSS, Javascript and all the beautiful frameworks that comes with it, to back-end programming with C# .Net, Games development with Unity and even SQL databases. and I loved every bit of it.
 
-                    As of now I'm finishing my last semester with North Metro TAFE to attain my Diploma in software development, teaching myself web development at home. And actively Looking for work as a front-end Web Developer.
+
                   </p>
                 </div>
                 <div className="view-btns">
